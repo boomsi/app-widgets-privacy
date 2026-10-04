@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="zh-Hans">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f3f6fc">
+  <title>隐私政策 · 格点</title>
+  <style>
+    :root { color-scheme:light; --ink:#18243e; --muted:#62708a; --blue:#1685df; --line:#e6ebf3; }
+    * { box-sizing:border-box; }
+    body { margin:0; padding:32px 18px 64px; color:var(--ink); background:#f3f6fc; font:16px/1.75 -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif; }
+    main { width:min(760px,100%); margin:0 auto; padding:clamp(24px,6vw,56px); border:1px solid var(--line); border-radius:28px; background:white; box-shadow:0 20px 64px #213e6a10; }
+    nav { margin-bottom:32px; } nav a { color:var(--blue); text-decoration:none; }
+    .eyebrow { color:var(--blue); font-size:12px; font-weight:750; letter-spacing:.16em; }
+    h1 { margin:8px 0 4px; font-size:clamp(30px,7vw,42px); letter-spacing:-.04em; }
+    .updated { color:var(--muted); font-size:14px; }
+    h2 { margin:34px 0 8px; font-size:20px; }
+    p,li { color:#3f4d66; } ul { padding-left:1.25em; }
+    footer { margin-top:42px; padding-top:20px; border-top:1px solid var(--line); color:var(--muted); font-size:14px; }
+  </style>
+</head>
+<body>
+  <main>
+    <nav><a href="./">← 格点</a></nav>
+    <p class="eyebrow">GRID LAUNCHER</p>
+    <h1>隐私政策</h1>
+    <p class="updated">更新日期：2026 年 10 月 4 日</p>
+    <p>格点用于管理桌面小组件布局、图标图片和备用跳转。</p>
+
+    <h2>本地保存的信息</h2>
+    <p>小组件布局、备用跳转和用户选择的图标图片保存在本机 App Group 容器中，以便格点 App 与小组件共享。格点不要求创建账户。用户通过系统照片选择器明确挑选图片；当前版本在设备上处理并保存所选图片，不会把该图片上传到格点自有服务器。</p>
+    <p>成功获取的动态图标会在本机缓存 30 天。为避免重复请求，未匹配结果和临时请求失败也会暂存重试时间。</p>
+
+    <h2>动态图标查询</h2>
+    <p>如果某个格子的图标图片没有命中内置目录，格点可能将该系统动作的显示名称发送给 Apple 的 iTunes Search API，并指定中国区商店，以查找对应的 App Store 图标。系统动作可能是 App，也可能是快捷指令或其他动作，因此发送的名称不一定是应用名称。匹配到图标后，格点会从 Apple 的图片 CDN 下载图片并缓存在本机。</p>
+    <p>此查询由 Apple 处理，适用 Apple 对相关服务的条款和隐私政策。格点当前版本没有自有图标服务器、账户系统、广告 SDK 或分析 SDK。</p>
+
+    <h2>控制与删除</h2>
+    <p>用户可以在格点中更换或移除自定义图标图片，也可以更改备用跳转。卸载 App 会移除本机 App 数据；设备备份及系统级数据保留行为由 Apple 的系统设置和服务决定。</p>
+
+    <h2>联系开发者</h2>
+    <p>隐私或支持问题，请通过 App Store 商品页中提供的开发者支持联系方式提交。</p>
+    <footer><a href="./">格点 · Grid Launcher</a></footer>
+  </main>
+</body>
+</html>
