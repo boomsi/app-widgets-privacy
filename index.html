@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="zh-Hans">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f3f6fc">
+  <title>格点 · Grid Launcher</title>
+  <style>
+    :root { color-scheme: light; --ink:#14213d; --muted:#68758e; --blue:#1685df; --paper:#f3f6fc; }
+    * { box-sizing:border-box; }
+    body { margin:0; min-height:100vh; padding:48px 20px; color:var(--ink); font:16px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif; background:radial-gradient(circle at 85% 8%,#d8efff 0,transparent 32rem),var(--paper); }
+    main { width:min(720px,100%); margin:8vh auto; padding:clamp(28px,7vw,60px); border:1px solid #e4eaf4; border-radius:32px; background:#fff; box-shadow:0 24px 72px #213e6a12; }
+    .mark { display:grid; grid-template-columns:repeat(3,1fr); gap:4px; width:54px; height:54px; padding:10px; border-radius:16px; background:linear-gradient(145deg,#101a48,#234b9c); }
+    .mark i { border-radius:3px; background:#fff; } .mark i:nth-child(3),.mark i:nth-child(8) { background:#40d9ed; }
+    .eyebrow { margin:22px 0 8px; color:var(--blue); font-size:12px; font-weight:750; letter-spacing:.18em; }
+    h1 { margin:0; font-size:clamp(36px,8vw,54px); letter-spacing:-.05em; }
+    p { max-width:52ch; color:var(--muted); }
+    nav { display:flex; flex-wrap:wrap; gap:12px; margin-top:32px; }
+    a { display:inline-block; padding:12px 18px; border-radius:14px; color:#fff; font-weight:650; text-decoration:none; background:var(--blue); }
+    a.secondary { color:var(--ink); background:#edf3fb; }
+    footer { margin-top:48px; color:#8994a8; font-size:13px; }
+  </style>
+</head>
+<body>
+  <main>
+    <div class="mark" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+    <p class="eyebrow">GRID LAUNCHER</p>
+    <h1>格点</h1>
+    <p>把常用应用排进桌面小组件，一格直达。这里提供格点的隐私政策与支持信息。</p>
+    <nav aria-label="文档">
+      <a href="privacy.html">隐私政策</a>
+      <a class="secondary" href="support.html">支持</a>
+    </nav>
+    <footer>© 2026 格点 · Grid Launcher</footer>
+  </main>
+</body>
+</html>
